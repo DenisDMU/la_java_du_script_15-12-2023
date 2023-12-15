@@ -1,7 +1,7 @@
 $(document).ready(function(){
     // generer le mdp
  $('#genererPassword').on('click',function(){
-     let mdp ='lemdpestici';
+     let mdp = Math.random().toString(36).slice(-8);
      $('#password,#password2').val(mdp);
     });
     // voir le mdp
