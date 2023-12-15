@@ -33,7 +33,7 @@ $(document).ready(function(){
     }});
     // Afficher dans la div apercu_couleur la couleur choisie.
     $('#couleur').on('click',function(){
-        $('#couleur').append($('.apercu_couleur')).css('width:100px','height:100px');
+        $('.apercu_couleur').val($('#couleur').val()).css('width:100px','height:100px');
     });
     // Requete ajax
     $('#submit').on('click',function(dis){
